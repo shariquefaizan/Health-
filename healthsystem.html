@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health</title>
+</head>
+<style>
+    .main {
+        width: 50%;
+        margin: 0 auto;
+        /* background-color: rgb(150, 150, 150); */
+        /* background: rgb(2,0,36); */
+        background: linear-gradient(90deg, rgb(167, 167, 175) 0%, rgb(117, 117, 163) 35%, rgba(0, 212, 255, 1) 100%);
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    .h h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .same {
+        height: 20px;
+        width: 70%;
+        margin: 0 auto
+    }
+
+    h3 {
+        margin-top: 80px;
+    }
+
+    .big {
+        height: 25px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="h">
+            <h1>
+                Diet plan
+            </h1>
+        </div>
+        <div id="" class="same ">
+            <h3> PROTIEN</h3>
+            <input class="big" type="text" id="p" value=" "></input>
+            <button class="big" onclick="clickme();">Increase value</button>
+            <button class="big" onclick="clicknow();">Decrease value</button>
+        </div>
+
+        <div id="" class="same">
+            <h3> CALORIES</h3>
+            <input class="big" type="text" id="c" value=""></input>
+            <button class="big" onclick="clickme();"> Increase value </button>
+            <button class="big" onclick="clicknow();">Decrease value</button>
+
+        </div>
+
+        <div id="" class="same">
+            <h3> FAT</h3>
+            <input class="big" type="text" id="f" value=""></input>
+            <button class="big" onclick="clickme();">Increase value</button>
+            <button class="big" onclick="clicknow();">Decrease value</button>
+        </div>
+    </div>
+
+    <!-- java script -->
+
+    <script>
+        var obj = {
+            protien: 10,
+            calories: 20,
+            fat: 50,
+        };
+
+        var i = 0;
+        document.getElementById("p").value = `${obj.protien}`;
+        document.getElementById("f").value = `${obj.calories}`;
+        document.getElementById("c").value = `${obj.fat}`;
+        function clickme() {
+            i++
+            document.getElementById("p").value = `${obj.protien + i}`;
+            document.getElementById("f").value = `${obj.calories + i}`;
+            document.getElementById("c").value = `${obj.fat + i}`;
+        }
+
+
+        function clicknow() {
+            i--
+            document.getElementById("p").value = `${obj.protien + i}`;
+            document.getElementById("f").value = `${obj.calories + i}`;
+            document.getElementById("c").value = `${obj.fat + i}`;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+var obj = {
+    protine: 20,
+    fat: 15,
+    calories: 25
+
+};
+
+document.getElementById('p').value = `${obj.protine} `;
+document.getElementById('c').value = `${obj.calories} `;
+document.getElementById('f').value = `${obj.fat} `;
+
+var i = 0;
+
+function clickme() {
+
+    i++;
+
+    document.getElementById('p').value = `${obj.protine + i} `;
+    document.getElementById('c').value = `${obj.calories + i} `;
+    document.getElementById('f').value = `${obj.calories + i} `;
+}
+function clicknow() {
+    i--;
+    document.getElementById('p').value = `${obj.protine + i} `;
+    document.getElementById('c').value = `${obj.calories + i} `;
+    document.getElementById('f').value = `${obj.fat + i} `;
+
+} -->
